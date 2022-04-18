@@ -3,11 +3,14 @@ import React from 'react'
 const Plan = () => {
     return (
         <div>
-            <p>
+            <div>
+                {/* Hero START */}
                 Create a plan
                 Build a subscription plan that best fits your needs. We offer an assortment of the best
                 artisan coffees from around the globe delivered fresh to your door.
+                {/* Hero END */}
 
+                {/* Overview START */}
                 01
                 Pick your coffee
                 Select from our evolving range of artisan coffees. Our beans are ethically
@@ -23,6 +26,11 @@ const Plan = () => {
                 Receive and enjoy!
                 We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
                 world-class coffees curated to provide a distinct tasting experience.
+
+                {/* Overview END */}
+
+
+                {/* Order START */}
 
                 01 Preferences
                 02 Bean type
@@ -84,12 +92,19 @@ const Plan = () => {
                 Every month
                 $22.50 per shipment. Includes free priority shipping.
 
+                {/* Order END */}
+
+                {/* Summary START */}
+                {/* use object literals here? */}
+
                 Order Summary
                 “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
                 sent to me _____.”
 
-                Create my plan!
-            </p>
+                {/* Summary END */}
+                <button>Create my plan!</button>
+
+            </div>
         </div>
     )
 }
