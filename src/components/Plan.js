@@ -2,30 +2,48 @@ import React from 'react'
 
 const Plan = () => {
     return (
-        <div>
+        <div className='font-Fraunces'>
             <div>
                 {/* Hero START */}
-                Create a plan
-                Build a subscription plan that best fits your needs. We offer an assortment of the best
-                artisan coffees from around the globe delivered fresh to your door.
+                <div>
+                    <h1>
+                        Create a plan
+                    </h1>
+                    <div>
+                        Build a subscription plan that best fits your needs. We offer an assortment of the best
+                        artisan coffees from around the globe delivered fresh to your door.
+                    </div>
+                </div>
+
                 {/* Hero END */}
 
                 {/* Overview START */}
-                01
-                Pick your coffee
-                Select from our evolving range of artisan coffees. Our beans are ethically
-                sourced and we pay fair prices for them. There's new coffees in all profiles
-                every month for you to try out.
-
-                02
-                Choose the frequency
-                Customize your order frequency, quantity, even your roast style and grind type.
-                Pause, skip or cancel your subscription with no commitment through our online portal.
-
-                03
-                Receive and enjoy!
-                We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
-                world-class coffees curated to provide a distinct tasting experience.
+                <div className='bg-dark-grey-blue'>
+                    <img></img>
+                    <div className='grid grid-cols-1 md:grid-cols-3 md:gap-8'>
+                        <div className='m-8 p-4'>
+                            <div className='mb-4 text-pale-orange text-6xl font-bold'>01</div>
+                            <div className='mb-6 text-cream text-2xl font-bold'>Pick your coffee</div>
+                            <div className='text-cream text-sm'>
+                                Select from our evolving range of artisan coffees. Our beans    are ethically sourced and we pay fair prices for them. There's new coffees in all profiles every month for you to try out.
+                            </div>
+                        </div>
+                        <div className='m-8 p-4'>
+                            <div className='mb-4 text-pale-orange text-6xl font-bold'>02</div>
+                            <div className='mb-6 text-cream text-2xl font-bold'>Choose the frequency</div>
+                            <div className='text-cream text-sm'>
+                                Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.
+                            </div>
+                        </div>
+                        <div className='m-8 p-4'>
+                            <div className='mb-4 text-pale-orange text-6xl font-bold'>03</div>
+                            <div className='mb-6 text-cream text-2xl font-bold'>Receive and enjoy!</div>
+                            <div className='text-cream text-sm'>
+                                We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Overview END */}
 
