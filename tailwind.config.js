@@ -10,6 +10,9 @@ module.exports = {
       'pale-orange': '#fdd6ba',
       'cream': '#fefcf7',
       'grey': '#83888f',
+      'wheat': '#F4F1EB',
+      'white': '#fff',
+
     },
     extend: {
       fontFamily: {

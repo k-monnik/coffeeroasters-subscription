@@ -8,7 +8,7 @@ import Plan from './components/Plan';
 
 function App() {
   return (
-    <div className="h-screen bg-cream font-Barlow">
+    <div className="h-screen bg-white font-Barlow">
       <Nav />
       <Plan />
     </div>

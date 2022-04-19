@@ -50,77 +50,153 @@ const Plan = () => {
 
                 {/* Order START */}
 
-                01 Preferences
-                02 Bean type
-                03 Quantity
-                04 Grind option
-                05 Deliveries
+                <div>
+                    <div>
+                        <div>
+                            <div>01</div>
+                            <div>Preferences</div>
+                        </div>
+                        <div>
+                            <div>02</div>
+                            <div>Bean type</div>
+                        </div>
+                        <div>
+                            <div>03</div>
+                            <div>Quantity</div>
+                        </div>
+                        <div>
+                            <div>04</div>
+                            <div>Grind option</div>
+                        </div>
+                        <div>
+                            <div>05</div>
+                            <div>Deliveries</div>
+                        </div>
+                    </div>
 
-                How do you drink your coffee?
+                    <div>
+                        <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-2 font-Barlow'>
+                            <div className='px-2'>
+                                <div className='flex justify-between mx-14'>
+                                    <h1 className='text-grey text-4xl font-Fraunces font-bold'>How do you drink your coffee?</h1>
+                                    <button>Hide</button>
+                                </div>
+                                <div className='md:flex md:px-2'>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Capsule</h2>
+                                        <div className='text-base px-6'>Compatible with Nespresso systems and similar brewers</div>
+                                    </div>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Filter</h2>
+                                        <div className='text-base px-6'>For pour over or drip methods like Aeropress, Chemex, and V60</div>
+                                    </div>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Espresso</h2>
+                                        <div className='text-base px-6'>Dense and finely ground beans for an intense, flavorful experience</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div className='flex justify-between mx-14'>
+                                    <h1 className='text-grey text-4xl font-Fraunces font-bold'>What type of coffee?</h1>
+                                    <button>Hide</button>
+                                </div>
+                                <div className='md:flex gap-6'>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Single origin</h2>
+                                        <div className='text-base px-6'>Distinct, high quality coffee from a specific family-owned farm</div>
+                                    </div>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Decaf</h2>
+                                        <div className='text-base px-6'>Just like regular coffee, except the caffeine has been removed</div>
+                                    </div>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Blended</h2>
+                                        <div className='text-base px-6'>Combination of two or three dark roasted beans of organic coffees</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div className='flex justify-between mx-14'>
+                                    <h1 className='text-grey text-4xl font-Fraunces font-bold'>How much would you like?</h1>
+                                    <button>Hide</button>
+                                </div>
+                                <div className='md:flex gap-6'>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>250g</h2>
+                                        <div className='text-base px-6'>Perfect for the solo drinker. Yields about 12 delicious cups</div>
+                                    </div>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>500g</h2>
+                                        <div className='text-base px-6'>Perfect option for a couple. Yields about 40 delectable cups</div>
+                                    </div>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>1000g</h2>
+                                        <div className='text-base px-6'>Perfect for offices and events. Yields about 90 delightful cups</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div className='flex justify-between mx-14'>
+                                    <h1 className='text-grey text-4xl font-Fraunces font-bold'>Want us to grind them?</h1>
+                                    <button>Hide</button>
+                                </div>
+                                <div className='md:flex gap-6'>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Wholebean</h2>
+                                        <div className='text-base px-6'>Best choice if you cherish the full sensory experience</div>
+                                    </div>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Filter</h2>
+                                        <div className='text-base px-6'>For drip or pour-over coffee methods such as V60 or Aeropress</div>
+                                    </div>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Cafetiére</h2>
+                                        <div className='text-base px-6'>Course ground beans specially suited for french press coffee</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div className='flex justify-between mx-14'>
+                                    <h1 className='text-grey text-4xl font-Fraunces font-bold'>How often should we deliver?</h1>
+                                    <button>Hide</button>
+                                </div>
+                                <div className='md:flex gap-6'>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Every week</h2>
+                                        <div className='text-base px-6'>$14.00 per shipment. Includes free first-class shipping.</div>
+                                    </div>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Every 2 weeks</h2>
+                                        <div className='text-base px-6'>$17.25 per shipment. Includes free priority shipping.</div>
+                                    </div>
+                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Every month</h2>
+                                        <div className='text-base px-6'>$22.50 per shipment. Includes free priority shipping.</div>
+                                    </div>
+                                </div>
+                            </div>
 
-                Capsule
-                Compatible with Nespresso systems and similar brewers
+                        </div>
 
-                Filter
-                For pour over or drip methods like Aeropress, Chemex, and V60
+                        {/* Order END */}
 
-                Espresso
-                Dense and finely ground beans for an intense, flavorful experience
+                        {/* Summary START */}
+                        {/* use template literals here? */}
+                        <div>
+                            <div>Order Summary</div>
+                            <div>
+                                `I drink coffee ${ }, with a ${ } type of bean, ${ } ground ala ${ },
+                                sent to me ${ }.`
+                            </div>
+                        </div>
 
-                What type of coffee?
+                        {/* Summary END */}
+                        <button>Create my plan!</button>
+                    </div>
 
-                Single origin
-                Distinct, high quality coffee from a specific family-owned farm
+                </div>
 
-                Decaf
-                Just like regular coffee, except the caffeine has been removed
-
-                Blended
-                Combination of two or three dark roasted beans of organic coffees
-
-                How much would you like?
-                250g
-                Perfect for the solo drinker. Yields about 12 delicious cups.
-
-                500g
-                Perfect option for a couple. Yields about 40 delectable cups.
-
-                1000g
-                Perfect for offices and events. Yields about 90 delightful cups.
-
-                Want us to grind them?
-
-                Wholebean
-                Best choice if you cherish the full sensory experience
-
-                Filter
-                For drip or pour-over coffee methods such as V60 or Aeropress
-
-                Cafetiére
-                Course ground beans specially suited for french press coffee
-
-                How often should we deliver?
-
-                Every week
-                $14.00 per shipment. Includes free first-class shipping.
-
-                Every 2 weeks
-                $17.25 per shipment. Includes free priority shipping.
-
-                Every month
-                $22.50 per shipment. Includes free priority shipping.
-
-                {/* Order END */}
-
-                {/* Summary START */}
-                {/* use object literals here? */}
-
-                Order Summary
-                “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
-                sent to me _____.”
-
-                {/* Summary END */}
-                <button>Create my plan!</button>
 
             </div>
         </div>
