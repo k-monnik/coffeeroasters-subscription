@@ -1,6 +1,8 @@
-import React from 'react'
+import { useState } from "react";
 
 const Plan = () => {
+    const [show, setShow] = useState(false);
+
     return (
         <div className='font-Fraunces'>
             <div>
@@ -79,102 +81,127 @@ const Plan = () => {
                             <div className='px-2'>
                                 <div className='flex justify-between mx-14'>
                                     <h1 className='text-grey text-4xl font-Fraunces font-bold'>How do you drink your coffee?</h1>
-                                    <button>Hide</button>
+                                    <button onClick={() => setShow(!show)}>Hide</button>
                                 </div>
-                                <div className='md:flex md:px-2'>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Capsule</h2>
-                                        <div className='text-base px-6'>Compatible with Nespresso systems and similar brewers</div>
-                                    </div>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Filter</h2>
-                                        <div className='text-base px-6'>For pour over or drip methods like Aeropress, Chemex, and V60</div>
-                                    </div>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Espresso</h2>
-                                        <div className='text-base px-6'>Dense and finely ground beans for an intense, flavorful experience</div>
-                                    </div>
-                                </div>
+                                {
+                                    show
+                                        ?
+                                        <div className='md:flex md:px-2'>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Capsule</h2>
+                                                <div className='text-base px-6'>Compatible with Nespresso systems and similar brewers</div>
+                                            </div>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Filter</h2>
+                                                <div className='text-base px-6'>For pour over or drip methods like Aeropress, Chemex, and V60</div>
+                                            </div>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Espresso</h2>
+                                                <div className='text-base px-6'>Dense and finely ground beans for an intense, flavorful experience</div>
+                                            </div>
+                                        </div>
+                                        : null
+                                }
                             </div>
                             <div>
                                 <div className='flex justify-between mx-14'>
                                     <h1 className='text-grey text-4xl font-Fraunces font-bold'>What type of coffee?</h1>
-                                    <button>Hide</button>
+                                    <button onClick={() => setShow(!show)}>Hide</button>
                                 </div>
-                                <div className='md:flex gap-6'>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Single origin</h2>
-                                        <div className='text-base px-6'>Distinct, high quality coffee from a specific family-owned farm</div>
-                                    </div>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Decaf</h2>
-                                        <div className='text-base px-6'>Just like regular coffee, except the caffeine has been removed</div>
-                                    </div>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Blended</h2>
-                                        <div className='text-base px-6'>Combination of two or three dark roasted beans of organic coffees</div>
-                                    </div>
-                                </div>
+                                {
+                                    show
+                                        ?
+                                        <div className='md:flex gap-6'>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Single origin</h2>
+                                                <div className='text-base px-6'>Distinct, high quality coffee from a specific family-owned farm</div>
+                                            </div>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Decaf</h2>
+                                                <div className='text-base px-6'>Just like regular coffee, except the caffeine has been removed</div>
+                                            </div>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Blended</h2>
+                                                <div className='text-base px-6'>Combination of two or three dark roasted beans of organic coffees</div>
+                                            </div>
+                                        </div>
+                                        : null
+                                }
                             </div>
                             <div>
                                 <div className='flex justify-between mx-14'>
                                     <h1 className='text-grey text-4xl font-Fraunces font-bold'>How much would you like?</h1>
-                                    <button>Hide</button>
+                                    <button onClick={() => setShow(!show)}>Hide</button>
                                 </div>
-                                <div className='md:flex gap-6'>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>250g</h2>
-                                        <div className='text-base px-6'>Perfect for the solo drinker. Yields about 12 delicious cups</div>
-                                    </div>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>500g</h2>
-                                        <div className='text-base px-6'>Perfect option for a couple. Yields about 40 delectable cups</div>
-                                    </div>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>1000g</h2>
-                                        <div className='text-base px-6'>Perfect for offices and events. Yields about 90 delightful cups</div>
-                                    </div>
-                                </div>
+                                {
+                                    show
+                                        ?
+                                        <div className='md:flex gap-6'>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>250g</h2>
+                                                <div className='text-base px-6'>Perfect for the solo drinker. Yields about 12 delicious cups</div>
+                                            </div>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>500g</h2>
+                                                <div className='text-base px-6'>Perfect option for a couple. Yields about 40 delectable cups</div>
+                                            </div>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>1000g</h2>
+                                                <div className='text-base px-6'>Perfect for offices and events. Yields about 90 delightful cups</div>
+                                            </div>
+                                        </div>
+                                        : null
+                                }
                             </div>
                             <div>
                                 <div className='flex justify-between mx-14'>
                                     <h1 className='text-grey text-4xl font-Fraunces font-bold'>Want us to grind them?</h1>
-                                    <button>Hide</button>
+                                    <button onClick={() => setShow(!show)}>Hide</button>
                                 </div>
-                                <div className='md:flex gap-6'>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Wholebean</h2>
-                                        <div className='text-base px-6'>Best choice if you cherish the full sensory experience</div>
-                                    </div>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Filter</h2>
-                                        <div className='text-base px-6'>For drip or pour-over coffee methods such as V60 or Aeropress</div>
-                                    </div>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Cafetiére</h2>
-                                        <div className='text-base px-6'>Course ground beans specially suited for french press coffee</div>
-                                    </div>
-                                </div>
+                                {
+                                    show
+                                        ?
+                                        <div className='md:flex gap-6'>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Wholebean</h2>
+                                                <div className='text-base px-6'>Best choice if you cherish the full sensory experience</div>
+                                            </div>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Filter</h2>
+                                                <div className='text-base px-6'>For drip or pour-over coffee methods such as V60 or Aeropress</div>
+                                            </div>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Cafetiére</h2>
+                                                <div className='text-base px-6'>Course ground beans specially suited for french press coffee</div>
+                                            </div>
+                                        </div>
+                                        : null
+                                }
                             </div>
                             <div>
                                 <div className='flex justify-between mx-14'>
                                     <h1 className='text-grey text-4xl font-Fraunces font-bold'>How often should we deliver?</h1>
-                                    <button>Hide</button>
+                                    <button onClick={() => setShow(!show)}>Hide</button>
                                 </div>
-                                <div className='md:flex gap-6'>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Every week</h2>
-                                        <div className='text-base px-6'>$14.00 per shipment. Includes free first-class shipping.</div>
-                                    </div>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Every 2 weeks</h2>
-                                        <div className='text-base px-6'>$17.25 per shipment. Includes free priority shipping.</div>
-                                    </div>
-                                    <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
-                                        <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Every month</h2>
-                                        <div className='text-base px-6'>$22.50 per shipment. Includes free priority shipping.</div>
-                                    </div>
-                                </div>
+                                {
+                                    show
+                                        ?
+                                        <div className='md:flex gap-6'>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Every week</h2>
+                                                <div className='text-base px-6'>$14.00 per shipment. Includes free first-class shipping.</div>
+                                            </div>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Every 2 weeks</h2>
+                                                <div className='text-base px-6'>$17.25 per shipment. Includes free priority shipping.</div>
+                                            </div>
+                                            <div className='bg-wheat text-dark-grey-blue w-60 h-56 m-8'>
+                                                <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>Every month</h2>
+                                                <div className='text-base px-6'>$22.50 per shipment. Includes free priority shipping.</div>
+                                            </div>
+                                        </div>
+                                        : null
+                                }
                             </div>
 
                         </div>
