@@ -4,7 +4,7 @@
 const Nav = () => {
     return (
         <>
-            <nav className="sticky top-0 cursor-pointer flex flex-row justify-between bg-white text-dark-grey-blue">
+            <nav className="sticky top-0 cursor-pointer flex flex-row justify-between bg-white text-dark-grey-blue mb-8">
                 <div className='font-bold m-2 font-Fraunces'>
                     {/* <HashLink smooth to='/#'></HashLink> */}
                     COFFEEROASTERS
