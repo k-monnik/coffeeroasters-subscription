@@ -1,9 +1,13 @@
 import React from 'react'
 import hero from '../starter-code/assets/home/desktop/image-hero-coffeepress.jpg';
+import gran from '../starter-code/assets/home/desktop/image-gran-espresso.png';
+import planalto from '../starter-code/assets/home/desktop/image-planalto.png';
+import piccollo from '../starter-code/assets/home/desktop/image-piccollo.png';
+import danche from '../starter-code/assets/home/desktop/image-danche.png';
 
 const Home = () => {
     return (
-        <div>
+        <div className='w-full'>
             <div className='container relative'>
                 <img src={hero} alt='french coffee press set on a dark background with a small clear glass and a small pile of whole espresso beans in the foreground of the right corner ' className='mx-auto block object-cover max-w-7xl h-3/4 rounded-xl shadow-2xl' />
                 <div className='absolute inset-y-24 inset-x-52 text-white'>
@@ -14,6 +18,41 @@ const Home = () => {
 
             </div>
 
+            <div className='mt-64 text-3xl md:text-6xl lg:text-10xl font-Fraunces
+                font-black flex justify-center text-transparent bg-clip-text bg-gradient-to-b from-grey/70 to-white'>
+                our collection
+            </div>
+
+            <div className='flex justify-center -mt-[90px]'>
+
+                <div className='grid grid-flow-col grid-cols-4 gap-x-6'>
+                    <div className='mx-auto w-64 h-96'>
+                        <img src={gran} alt='gran espresso product, tan bag with teal label' className='mb-20' />
+                        <div className='font-bold font-Fraunces text-dark-grey-blue text-2xl text-center'>Gran Espresso</div>
+                        <div className='font-Barlow text-dark-grey-blue font-light text-center'>Light and flavorful blend with cocoa and black pepper for an intense experience</div>
+
+                    </div>
+                    <div className='mx-auto w-64 h-96'>
+                        <img src={planalto} alt='planalto product, tan bag with olive green label' className='mb-20' />
+                        <div className='font-bold font-Fraunces text-dark-grey-blue text-2xl text-center'>Planalto</div>
+                        <div className='font-Barlow text-dark-grey-blue font-light text-center'>Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</div>
+
+                    </div>
+                    <div className='mx-auto w-64 h-96'>
+                        <img src={piccollo} alt='piccollo product, tan bag with brown label' className='mb-20' />
+                        <div className='font-bold font-Fraunces text-dark-grey-blue text-2xl text-center'>Piccollo</div>
+                        <div className='font-Barlow text-dark-grey-blue font-light text-center'>Mild and smooth blend featuring notes of toasted almond and dried cherry</div>
+
+                    </div>
+                    <div className='mx-auto w-64 h-96'>
+                        <img src={danche} alt='danche product, tan bag with red label' className='mb-20' />
+                        <div className='font-bold font-Fraunces text-dark-grey-blue text-2xl text-center'>Danche</div>
+                        <div className='font-Barlow text-dark-grey-blue font-light text-center'>Ethiopian hand-harvested blend densely packed with vibrant fruit notes</div>
+
+                    </div>
+                </div>
+            </div>
+
             <p>
 
 
@@ -21,19 +60,19 @@ const Home = () => {
 
 
 
-                Our collection
 
-                Gran Espresso
-                Light and flavorful blend with cocoa and black pepper for an intense experience
 
-                Planalto
-                Brazilian dark roast with rich and velvety body, and hints of fruits and nuts
 
-                Piccollo
-                Mild and smooth blend featuring notes of toasted almond and dried cherry
 
-                Danche
-                Ethiopian hand-harvested blend densely packed with vibrant fruit notes
+
+
+
+
+
+
+
+
+
 
                 Why choose us?
 
