@@ -1,7 +1,7 @@
 
 import './App.css';
 import Nav from './components/Nav';
-// import Home from './components/Home';
+import Home from './components/Home';
 // import About from './components/About';
 // import Plan from './components/Plan';
 // import NewPlan from './components/NewPlan';
@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="h-screen bg-white font-Barlow">
       <Nav />
+      <Home />
       {/* <NewPlan /> */}
     </div>
   );
