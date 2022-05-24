@@ -4,10 +4,14 @@ import gran from '../starter-code/assets/home/desktop/image-gran-espresso.png';
 import planalto from '../starter-code/assets/home/desktop/image-planalto.png';
 import piccollo from '../starter-code/assets/home/desktop/image-piccollo.png';
 import danche from '../starter-code/assets/home/desktop/image-danche.png';
+import bean from '../starter-code/assets/home/desktop/icon-coffee-bean.svg';
+import gift from '../starter-code/assets/home/desktop/icon-gift.svg';
+import truck from '../starter-code/assets/home/desktop/icon-truck.svg';
 
 const Home = () => {
     return (
         <div className='w-full'>
+            {/* HERO IMAGE START */}
             <div className='container relative'>
                 <img src={hero} alt='french coffee press set on a dark background with a small clear glass and a small pile of whole espresso beans in the foreground of the right corner ' className='mx-auto block object-cover w-[1280px] h-[600px] rounded-xl shadow-2xl' />
                 <div className='absolute inset-y-24 inset-x-52 text-white'>
@@ -17,6 +21,10 @@ const Home = () => {
                 </div>
 
             </div>
+
+            {/* HERO IMAGE END */}
+
+            {/* OUR COLLECTION START */}
 
             <div className='mt-64 text-3xl md:text-6xl lg:text-10xl font-Fraunces
                 font-black flex justify-center text-transparent bg-clip-text bg-gradient-to-b from-grey/70 to-white'>
@@ -45,14 +53,19 @@ const Home = () => {
 
                     </div>
                     <div className='mx-auto w-64 h-96'>
-                        <img src={danche} alt='danche product, tan bag with red label' className='mb-20' />
+                        <img src={danche} alt='piccollo product, tan bag with red label' className='mb-20' />
                         <div className='font-bold font-Fraunces text-dark-grey-blue text-2xl text-center'>Danche</div>
                         <div className='font-Barlow text-dark-grey-blue font-light text-center'>Ethiopian hand-harvested blend densely packed with vibrant fruit notes</div>
 
                     </div>
                 </div>
             </div>
-            <div className='w-[1280px] h-[728px] bg-dark-grey-blue rounded-xl my-44 mx-auto'>
+
+            {/* OUR COLLECTION END */}
+
+            {/* WHY CHOOSE US START */}
+
+            <div className='w-[1280px] h-[577px] bg-dark-grey-blue rounded-xl my-44 mx-auto'>
                 <div className='object-center align-center py-24'>
                     <h1 className='font-Fraunces font-bold text-4xl text-wheat flex justify-center mb-8'>Why choose us?</h1>
                     <p className='font-Barlow font-light text-wheat flex justify-center text-center w-[540px] align-middle mx-auto'>
@@ -60,6 +73,30 @@ const Home = () => {
                         in our range. This means working closely with the best coffee growers to give
                         you a more impactful experience on every level.
                     </p>
+                </div>
+            </div>
+
+            <div className='flex justify-center mx-auto w-[1110px] -mt-[410px]'>
+
+                <div className='grid grid-flow-col grid-cols-3 gap-x-8'>
+                    <div className='mx-auto w-[350px] h-[382px] bg-dark-cyan rounded-lg'>
+                        <img src={bean} alt='coffee bean icon' className='mx-auto pt-20 pb-12' />
+                        <div className='font-bold font-Fraunces text-cream text-2xl text-center pb-6'>Best quality</div>
+                        <div className='font-Barlow text-cream font-thin text-center px-14 '>Discover an endless variety of the world’s best artisan coffee from each of our roasters.</div>
+
+                    </div>
+                    <div className='mx-auto [350px] h-[382px] bg-dark-cyan rounded-lg'>
+                        <img src={gift} alt='gift icon' className='mx-auto pt-20 pb-12' />
+                        <div className='font-bold font-Fraunces text-cream text-2xl text-center pb-6'>Exclusive benefits</div>
+                        <div className='font-Barlow text-cream font-thin text-center px-14'>Special offers and swag when you subscribe, including 30% off your first shipment.</div>
+
+                    </div>
+                    <div className='mx-auto [350px] h-[382px] bg-dark-cyan rounded-lg'>
+                        <img src={truck} alt='delivery truck icon' className='mx-auto pt-24 pb-12' />
+                        <div className='font-bold font-Fraunces text-cream text-2xl text-center pb-6'>Free shipping</div>
+                        <div className='font-Barlow text-cream font-thin text-center px-14'>We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</div>
+
+                    </div>
                 </div>
             </div>
 
@@ -75,24 +112,6 @@ const Home = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-                Best quality
-                Discover an endless variety of the world’s best artisan coffee from each of our roasters.
-
-                Exclusive benefits
-                Special offers and swag when you subscribe, including 30% off your first shipment.
-
-                Free shipping
-                We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.
 
                 How it works
 
