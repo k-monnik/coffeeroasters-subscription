@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div className='w-full'>
             <div className='container relative'>
-                <img src={hero} alt='french coffee press set on a dark background with a small clear glass and a small pile of whole espresso beans in the foreground of the right corner ' className='mx-auto block object-cover max-w-7xl h-3/4 rounded-xl shadow-2xl' />
+                <img src={hero} alt='french coffee press set on a dark background with a small clear glass and a small pile of whole espresso beans in the foreground of the right corner ' className='mx-auto block object-cover w-[1280px] h-[600px] rounded-xl shadow-2xl' />
                 <div className='absolute inset-y-24 inset-x-52 text-white'>
                     <h1 className='text-7xl font-Fraunces font-bold'>Great coffee<br></br> made simple.</h1>
                     <p className='mt-8 font-thin text-cream/80'>Start your mornings with the world’s best coffees. Try our <br></br>  expertly curated artisan coffees from our best roasters <br></br> delivered directly to your door, at your schedule.</p>
@@ -52,6 +52,16 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <div className='w-[1280px] h-[728px] bg-dark-grey-blue rounded-xl my-44 mx-auto'>
+                <div className='object-center align-center py-24'>
+                    <h1 className='font-Fraunces font-bold text-4xl text-wheat flex justify-center mb-8'>Why choose us?</h1>
+                    <p className='font-Barlow font-light text-wheat flex justify-center text-center w-[540px] align-middle mx-auto'>
+                        A large part of our role is choosing which particular coffees will be featured
+                        in our range. This means working closely with the best coffee growers to give
+                        you a more impactful experience on every level.
+                    </p>
+                </div>
+            </div>
 
             <p>
 
@@ -74,11 +84,6 @@ const Home = () => {
 
 
 
-                Why choose us?
-
-                A large part of our role is choosing which particular coffees will be featured
-                in our range. This means working closely with the best coffee growers to give
-                you a more impactful experience on every level.
 
                 Best quality
                 Discover an endless variety of the world’s best artisan coffee from each of our roasters.
