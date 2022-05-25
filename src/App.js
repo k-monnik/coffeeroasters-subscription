@@ -10,7 +10,7 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <div className="h-screen bg-white font-Barlow">
+    <div className="h-screen bg-cream font-Barlow">
       <Nav />
       <Home />
       {/* <NewPlan /> */}

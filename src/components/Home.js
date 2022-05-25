@@ -7,6 +7,8 @@ import danche from '../starter-code/assets/home/desktop/image-danche.png';
 import bean from '../starter-code/assets/home/desktop/icon-coffee-bean.svg';
 import gift from '../starter-code/assets/home/desktop/icon-gift.svg';
 import truck from '../starter-code/assets/home/desktop/icon-truck.svg';
+import oval from '../starter-code/assets/home/desktop/oval.svg';
+import line from '../starter-code/assets/home/desktop/Path.png';
 
 const Home = () => {
     return (
@@ -100,39 +102,56 @@ const Home = () => {
                 </div>
             </div>
 
-            <p>
+            {/* WHY CHOOSE US END */}
+
+            {/* HOW IT WORKS START */}
+
+            <div className='md:w-[1045px] md:h-[565px] mx-auto mb-24'>
+                <h1 className='font-Fraunces font-bold text-grey text-2xl my-24'>How it works</h1>
+                <div className='my-12'>
+                    <img src={line} alt="thin peach horizontal line" className='mt-16' />
+                    <div className='flex gap-[340px] -mt-4'>
+                        <img src={oval} alt="teal circle icon" />
+                        <img src={oval} alt="teal circle icon" />
+                        <img src={oval} alt="teal circle icon" />
+                    </div>
+                </div>
+
+                <div className='mb-8'>
+                    <div className='grid grid-flow-col grid-cols-3 gap-x-8'>
+                        <div className='w-[285px] h-[355px]'>
+                            <h1 className='font-black font-Fraunces text-pale-orange text-6xl pb-8'>01</h1>
+                            <div className='font-bold font-Fraunces text-dark-grey-blue text-4xl leading-10 pb-14'>Pick your coffee</div>
+                            <div className='font-Barlow text-dark-grey-blue font-light'>Select from our evolving range of artisan coffees. Our beans are ethically
+                                sourced and we pay fair prices for them. There are new coffees in all profiles
+                                every month for you to try out.</div>
+
+                        </div>
+                        <div className='w-[285px] h-[355px]'>
+                            <h1 className='font-black font-Fraunces text-pale-orange text-6xl pb-8'>02</h1>
+                            <div className='font-bold font-Fraunces text-dark-grey-blue text-4xl  leading-10 pb-14'>Choose the frequency</div>
+                            <div className='font-Barlow text-dark-grey-blue font-light'>Customize your order frequency, quantity, even your roast style and grind type.
+                                Pause, skip or cancel your subscription with no commitment through our online portal.</div>
+
+                        </div>
+                        <div className='w-[285px] h-[355px]'>
+                            <h1 className='font-black font-Fraunces text-pale-orange text-6xl pb-8'>03</h1>
+                            <div className='font-bold font-Fraunces text-dark-grey-blue text-4xl leading-10 pb-14'>Receive and enjoy!</div>
+                            <div className='font-Barlow text-dark-grey-blue font-light'>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
+                                world-class coffees curated to provide a distinct tasting experience.</div>
+
+                        </div>
+                    </div>
+                </div>
+                <button className='my-14 bg-dark-cyan px-8 py-3 rounded-md text-lg text-white font-Fraunces font-bold'>Create your plan</button>
+            </div>
 
 
 
+            {/* HOW IT WORKS END */}
 
 
 
-
-
-
-
-
-
-                How it works
-
-                01
-                Pick your coffee
-                Select from our evolving range of artisan coffees. Our beans are ethically
-                sourced and we pay fair prices for them. There are new coffees in all profiles
-                every month for you to try out.
-
-                02
-                Choose the frequency
-                Customize your order frequency, quantity, even your roast style and grind type.
-                Pause, skip or cancel your subscription with no commitment through our online portal.
-
-                03
-                Receive and enjoy!
-                We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
-                world-class coffees curated to provide a distinct tasting experience.
-
-                Create your plan
-            </p>
         </div>
     )
 }
