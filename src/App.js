@@ -6,13 +6,14 @@ import Home from './components/Home';
 // import Plan from './components/Plan';
 // import NewPlan from './components/NewPlan';
 // import MenuCard from './components/MenuForm';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="h-screen bg-cream font-Barlow">
       <Nav />
       <Home />
+      <Footer />
       {/* <NewPlan /> */}
     </div>
   );
