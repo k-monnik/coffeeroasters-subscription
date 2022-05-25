@@ -1,20 +1,22 @@
 // import { HashLink } from 'react-router-hash-link';
 // import { Link, NavLink } from 'react-router-dom';
+import logoNavy from '../starter-code/assets/shared/desktop/logo-navy.svg';
 
 const Nav = () => {
     return (
         <>
-            <nav className="sticky top-0 cursor-pointer flex flex-row justify-between bg-white text-dark-grey-blue mb-8">
-                <div className='font-bold m-2 font-Fraunces'>
-                    {/* <HashLink smooth to='/#'></HashLink> */}
+            <nav className="sticky top-0 cursor-pointer flex flex-row justify-between bg-cream text-dark-grey-blue mb-8">
+                {/* <div className='font-bold m-2 font-Fraunces'>
+                    <HashLink smooth to='/#'></HashLink>
                     COFFEEROASTERS
-                </div>
+                </div> */}
                 {/* <div className='px-6 mt-2 text-2xl md:hidden' onClick={toggle}>
                     <FiMenu />
                 </div> */}
+                <img src={logoNavy} alt="coffeeroasters logo with 2 coffee beans" className='m-4' />
 
                 <div className='hidden md:block'>
-                    <ul className='flex flex-row gap-20 mr-8'>
+                    <ul className='flex flex-row gap-10 mr-8 uppercase text-xs text-grey font-semibold font-Barlow'>
                         <li className='pt-2 hover:border-b-4 hover:dark-cyan'>
                             {/* <HashLink smooth to={'/page#about'}>Home</HashLink> */}
                             Home

@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='md:w-[1280px] md:h-[120px] bg-dark-grey-blue mx-auto'>
                 <div className='flex justify-around pt-12'>
                     <div className=''>
-                        <img src={logo} alt="coffeeroasters logo with 2 coffee beans" className='text-white' />
+                        <img src={logo} alt="coffeeroasters logo with 2 coffee beans" />
                     </div>
 
                     <div className='flex gap-10 uppercase text-xs text-grey font-semibold font-Barlow'>

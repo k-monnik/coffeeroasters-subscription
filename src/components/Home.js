@@ -14,7 +14,7 @@ import line from '../starter-code/assets/home/desktop/Path.png';
 const Home = () => {
     return (
         <>
-            <div className='w-full'>
+            <div className='w-full bg-cream'>
                 {/* HERO IMAGE START */}
                 <div className='container relative'>
                     <img src={hero} alt='french coffee press set on a dark background with a small clear glass and a small pile of whole espresso beans in the foreground of the right corner ' className='mx-auto block object-cover w-[1280px] h-[600px] rounded-xl shadow-2xl' />
