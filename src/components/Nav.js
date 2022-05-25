@@ -5,7 +5,7 @@ import logoNavy from '../starter-code/assets/shared/desktop/logo-navy.svg';
 const Nav = () => {
     return (
         <>
-            <nav className="sticky top-0 cursor-pointer flex flex-row justify-between bg-cream text-dark-grey-blue mb-8">
+            <nav className="top-0 cursor-pointer flex flex-row justify-between bg-cream text-dark-grey-blue mb-8">
                 {/* <div className='font-bold m-2 font-Fraunces'>
                     <HashLink smooth to='/#'></HashLink>
                     COFFEEROASTERS

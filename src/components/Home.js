@@ -1,4 +1,4 @@
-import React from 'react'
+
 import hero from '../starter-code/assets/home/desktop/image-hero-coffeepress.jpg';
 import gran from '../starter-code/assets/home/desktop/image-gran-espresso.png';
 import planalto from '../starter-code/assets/home/desktop/image-planalto.png';
@@ -30,7 +30,7 @@ const Home = () => {
 
                 {/* OUR COLLECTION START */}
 
-                <div className='mt-64 text-3xl md:text-6xl lg:text-10xl font-Fraunces
+                <div className='mt-36 text-3xl md:text-6xl lg:text-10xl font-Fraunces
                 font-black flex justify-center text-transparent bg-clip-text bg-gradient-to-b from-grey/70 to-white'>
                     our collection
                 </div>
