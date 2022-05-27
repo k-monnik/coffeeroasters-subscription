@@ -1,15 +1,12 @@
-// import { HashLink } from 'react-router-hash-link';
-// import { Link, NavLink } from 'react-router-dom';
+
+import { Link } from 'react-router-dom';
 import logoNavy from '../starter-code/assets/shared/desktop/logo-navy.svg';
 
 const Nav = () => {
     return (
         <>
             <nav className="top-0 cursor-pointer flex flex-row justify-between bg-cream text-dark-grey-blue mb-8">
-                {/* <div className='font-bold m-2 font-Fraunces'>
-                    <HashLink smooth to='/#'></HashLink>
-                    COFFEEROASTERS
-                </div> */}
+
                 {/* <div className='px-6 mt-2 text-2xl md:hidden' onClick={toggle}>
                     <FiMenu />
                 </div> */}
@@ -18,16 +15,13 @@ const Nav = () => {
                 <div className='hidden md:block'>
                     <ul className='flex flex-row gap-10 mr-8 uppercase text-xs text-grey font-semibold font-Barlow'>
                         <li className='pt-2 hover:border-b-4 hover:dark-cyan'>
-                            {/* <HashLink smooth to={'/page#about'}>Home</HashLink> */}
-                            Home
+                            <Link to='/'>Home</Link>
                         </li>
                         <li className='py-2 hover:border-b-4 hover:border-midnight'>
-                            {/* <HashLink smooth to={'/page#projects'}>About Us</HashLink> */}
-                            About Us
+                            <Link to='/about-us'>About us</Link>
                         </li>
                         <li className='py-2 hover:border-b-4 hover:border-midnight'>
-                            {/* <HashLink smooth to={'/page#contact'}>Create Your Plan</HashLink> */}
-                            Create Your Plan
+                            <Link to={'/create-your-plan'}>Create Your Plan</Link>
                         </li>
                     </ul>
                 </div>
