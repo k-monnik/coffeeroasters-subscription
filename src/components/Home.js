@@ -18,7 +18,7 @@ const Home = () => {
                 {/* HERO IMAGE START */}
                 <div className='container relative'>
                     <img src={hero} alt='french coffee press set on a dark background with a small clear glass and a small pile of whole espresso beans in the foreground of the right corner ' className='mx-auto flex justify-center object-cover w-[1280px] h-[600px] rounded-xl shadow-2xl' />
-                    <div className='absolute inset-y-24 inset-x-52 text-white'>
+                    <div className='absolute inset-y-24 pl-52 text-white'>
                         <h1 className='text-7xl font-Fraunces font-bold'>Great coffee<br></br> made simple.</h1>
                         <p className='mt-8 font-thin text-cream/80'>Start your mornings with the world’s best coffees. Try our <br></br>  expertly curated artisan coffees from our best roasters <br></br> delivered directly to your door, at your schedule.</p>
                         <button className='my-14 bg-dark-cyan px-8 py-3 rounded-md text-lg font-Fraunces font-bold'>Create your plan</button>

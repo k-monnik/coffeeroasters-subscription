@@ -1,13 +1,22 @@
-import React from 'react'
+import coffeeCup from '../starter-code/assets/about/desktop/image-hero-whitecup.jpg';
 
 const About = () => {
     return (
-        <div>
+        <div className='w-full bg-cream'>
+
+            {/* HERO IMAGE START */}
+
+            <div className='container relative'>
+                <img src={coffeeCup} alt='white coffee cup with frothy mocha on a saucer set on a dark wooden background' className='mx-auto flex justify-center object-cover w-[1280px] h-[450px] rounded-xl shadow-2xl' />
+                <div className='absolute inset-y-24 pl-48 text-white'>
+                    <h1 className='text-5xl font-Fraunces font-bold'>About Us</h1>
+                    <p className='mt-8 font-light text-cream w-[445px] h-[104px]'>Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from around the world. We have since been dedicated to bring the perfect cup - from bean to brew- in every shipment.</p>
+                </div>
+
+            </div>
             <p>
-                About us
-                Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of
-                coffee from around the world. We have since been dedicated to bring the perfect cup - from
-                bean to brew - in every shipment.
+
+
 
                 Our commitment
                 We’re built on a simple mission and a commitment to doing good along the way. We want to
