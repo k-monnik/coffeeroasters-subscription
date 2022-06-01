@@ -1,5 +1,6 @@
 import coffeeCup from '../starter-code/assets/about/desktop/image-hero-whitecup.jpg';
 import barista from '../starter-code/assets/about/desktop/image-commitment.jpg';
+import latte from '../starter-code/assets/about/desktop/image-quality.jpg';
 
 const About = () => {
     return (
@@ -35,6 +36,24 @@ const About = () => {
 
             {/* OUR COMMITMENT END */}
 
+            {/* UNCOMPROMISING QUALITY START */}
+
+            <div className='w-[1280px] h-[474px] bg-dark-grey-blue rounded-xl my-44 mx-auto'>
+                <div className='object-center align-center py-24'>
+                    <div className='grid grid-cols-2 gap-8'>
+                        <div className=''>
+                            <h1 className='font-Fraunces font-bold text-4xl text-wheat flex pl-16 mb-8'>Uncompromising quality</h1>
+                            <p className='font-Barlow font-thin text-wheat flex text-left w-[540px] align-middle mx-auto pl-4'>
+                                Although we work with growers who pay close attention to all stages of harvest and processing, we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast
+                                consistent, user-friendly coffee, so that brewing is easy and enjoyable.
+                            </p>
+                        </div>
+                        <img src={latte} alt="White coffee cup filled with coffee and heart design in latte foam with person's hand on the cup handle. The cup is sitting on a dark wooden counter with a small copper pitcher and white dishes in the background." className='rounded-lg -mt-48 ml-16' />
+                    </div>
+
+                </div>
+            </div>
+
             <p>
 
 
@@ -42,11 +61,7 @@ const About = () => {
 
 
 
-                Uncompromising quality
-                Although we work with growers who pay close attention to all stages of harvest and processing,
-                we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the
-                coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast
-                consistent, user-friendly coffee, so that brewing is easy and enjoyable.
+
 
                 Our headquarters
 
