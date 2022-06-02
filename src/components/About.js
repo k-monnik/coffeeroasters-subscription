@@ -1,6 +1,9 @@
 import coffeeCup from '../starter-code/assets/about/desktop/image-hero-whitecup.jpg';
 import barista from '../starter-code/assets/about/desktop/image-commitment.jpg';
 import latte from '../starter-code/assets/about/desktop/image-quality.jpg';
+import australia from '../starter-code/assets/about/desktop/illustration-australia.svg';
+import canada from '../starter-code/assets/about/desktop/illustration-canada.svg';
+import uk from '../starter-code/assets/about/desktop/illustration-uk.svg';
 
 const About = () => {
     return (
@@ -54,6 +57,36 @@ const About = () => {
                 </div>
             </div>
 
+            {/* UNCOMPROMISING QUALITY END */}
+
+            {/* OUR HEADQUARTERS START */}
+
+            <div className='md:w-[1045px] md:h-[565px] mx-auto'>
+                <h1 className='font-Fraunces font-bold text-grey text-2xl my-12'>Our headquarters</h1>
+                <div className='mb-4'>
+                    <div className='grid grid-flow-col grid-cols-3 gap-x-8'>
+                        <div className=' h-[355px]'>
+                            <img src={uk} alt="small teal illustration of UK" className='pb-8' />
+                            <div className='font-bold font-Fraunces text-dark-grey-blue text-4xl leading-10 pb-8'>United Kingdom</div>
+                            <div className='font-Barlow text-dark-grey-blue font-light'>68 Asfordby Rd<br></br>Alcaston<br></br>SY6 1YA<br></br>+44 1241 918425</div>
+
+                        </div>
+                        <div className='w-[285px] h-[355px]'>
+                            <img src={canada} alt="small teal illustration of Canada" className='pb-8' />
+                            <div className='font-bold font-Fraunces text-dark-grey-blue text-4xl  leading-10 pb-8'>Canada</div>
+                            <div className='font-Barlow text-dark-grey-blue font-light'>1528 Eglinton Avenue<br></br>Toronto<br></br>Ontario M4P 1A6<br></br>+1 416 485 2997</div>
+
+                        </div>
+                        <div className='w-[285px] h-[355px]'>
+                            <img src={australia} alt="small teal illustration of Australia" className='pb-8' />
+                            <div className='font-bold font-Fraunces text-dark-grey-blue text-4xl leading-10 pb-8'>Australia</div>
+                            <div className='font-Barlow text-dark-grey-blue font-light'>36 Swanston Street<br></br>Kewell<br></br>Victoria<br></br>+61 4 9928 3629</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <p>
 
 
@@ -63,25 +96,22 @@ const About = () => {
 
 
 
-                Our headquarters
 
-                United Kingdom
-                68 Asfordby Rd
-                Alcaston
-                SY6 1YA
-                +44 1241 918425
 
-                Canada
-                1528 Eglinton Avenue
-                Toronto
-                Ontario M4P 1A6
-                +1 416 485 2997
 
-                Australia
-                36 Swanston Street
-                Kewell
-                Victoria
-                +61 4 9928 3629
+
+
+
+
+
+
+
+
+
+
+
+
+
             </p>
         </div>
     )
