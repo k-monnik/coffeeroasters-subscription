@@ -1,27 +1,6 @@
-// import MenuTest from "./MenuTest";
-// import { MenuItems } from "../data/menu";
+
 import { useState } from "react";
 
-// const Toggle = ({ id, item }) => {
-//     const [toggleItem, setToggleItem] = useState(false);
-
-//     return (
-
-//         <div className="" key={id}>
-//             <button
-//                 className=""
-//                 onClick={() => setToggleItem((prev) => !prev)}
-//             >
-//                 Hide {item}
-//             </button>
-
-//             {toggleItem && <div key={id}>
-//                 <li>{item.name}</li>
-//                 <li>{item.description}</li>
-//             </div>}
-//         </div>
-//     );
-// };
 
 export default function PlanTest() {
     const data = [
@@ -89,6 +68,44 @@ export default function PlanTest() {
                     id: 109,
                 }
             ]
+        },
+        {
+            title: 'Want us to grind them?',
+            id: 3,
+            choices: [
+                {
+                    "name": "Whole bean",
+                    "description": "Best choice if you cherish the full sensory experience",
+                },
+
+                {
+                    "name": "Filter",
+                    "description": "For drip or pour-over coffee methods such as V60 or Aeropress",
+                },
+                {
+                    "name": "Cafetiére",
+                    "description": "Course ground beans specially suited for french press coffee",
+                }
+            ]
+        },
+        {
+            title: 'How often should we deliver?',
+            id: 4,
+            choices: [
+                {
+                    "name": "Every week",
+                    "description": "$14.00 per shipment. Includes free first-class shipping",
+                },
+
+                {
+                    "name": "Every 2 weeks",
+                    "description": "$17.25 per shipment. Includes free priority shipping",
+                },
+                {
+                    "name": "Every month",
+                    "description": "$22.50 per shipment. Includes free priority shipping",
+                }
+            ]
         }
     ];
 
@@ -106,10 +123,6 @@ export default function PlanTest() {
                 </button>
 
                 {toggleItem &&
-                    // <div key={id}>
-                    //     <li>{item.name}</li>
-                    //     <li>{item.description}</li>
-                    // </div>
                     <ul>
                         {question.choices.map((item, id) => (
 
@@ -133,25 +146,7 @@ export default function PlanTest() {
             <div>
                 {data.map((question, id) => {
                     return <Toggle id={id} question={question} />;
-                    // <div key={id}>
-                    //     <h2>{question.title}</h2>
-                    //     <div>
-                    //         <ul>
-                    //             {question.choices.map((item, id) => {
-                    //                 return <Toggle id={id} item={item} />;
-                    //                 // <div key={id}>
-                    //                 //     <li>{item.name}</li>
-                    //                 //     <li>{item.description}</li>
-                    //                 // </div>
-                    //             }
-                    //             )}
-                    //         </ul>
-                    //     </div>
-                    // </div>
                 })}
-                {/* {data.map((question, id) => {
-                    return <Toggle id={id} question={question} />;
-                })} */}
             </div>
         </>
     );
