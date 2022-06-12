@@ -38,7 +38,7 @@ export const MenuCard = ({ data }) => {
                                 <h2 className='text-2xl font-Fraunces font-bold my-6 px-6'>{data.choices}</h2>
                                 <div className='text-base px-6'>{data.description}</div>
                             </label> */}
-                            {MenuSubItems.map(({ name, items }, index) => (
+                            {MenuSubItems.map(({ name, description }, index) => (
                                 <MenuChoices key={index} name={name} description={description} />
                             ))}
                         </div>

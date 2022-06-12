@@ -1,4 +1,5 @@
 import { useState } from "react";
+import planHero from '../starter-code/assets/plan/desktop/image-hero-blackcup.jpg';
 
 const Plan = () => {
     const [show, setShow] = useState(false);
@@ -7,21 +8,21 @@ const Plan = () => {
         <div className='font-Fraunces'>
             <div>
                 {/* Hero START */}
-                <div>
-                    <h1>
-                        Create a plan
-                    </h1>
-                    <div>
-                        Build a subscription plan that best fits your needs. We offer an assortment of the best
-                        artisan coffees from around the globe delivered fresh to your door.
+                <div className='container relative'>
+                    <img src={planHero} alt='black coffee cup with frothy latte art on a saucer set on an out-of-focus background' className='mx-auto flex justify-center object-cover w-[1280px] h-[450px] rounded-xl shadow-2xl' />
+                    <div className='absolute inset-y-24 pl-48 text-white'>
+                        <h1 className='text-5xl font-Fraunces font-bold'>Create a plan</h1>
+                        <p className='mt-8 font-light text-cream w-[445px] h-[104px]'>Build a subscription plan that best fits your needs. We offer an assortment of the best
+                            artisan coffees from around the globe delivered fresh to your door.</p>
                     </div>
+
                 </div>
 
                 {/* Hero END */}
 
                 {/* Overview START */}
                 <div className='bg-dark-grey-blue'>
-                    <img></img>
+                    <img src="" alt="" />
                     <div className='grid grid-cols-1 md:grid-cols-3 md:gap-8'>
                         <div className='m-8 p-4'>
                             <div className='mb-4 text-pale-orange text-6xl font-bold'>01</div>

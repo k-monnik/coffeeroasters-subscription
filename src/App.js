@@ -4,10 +4,11 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import { Route, Routes } from 'react-router-dom';
 import About from './components/About';
-import Plan from './components/Plan';
+// import Plan from './components/Plan';
 // import NewPlan from './components/NewPlan';
 // import MenuCard from './components/MenuForm';
 import Footer from './components/Footer';
+import PlanTest from './components/PlanTest';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         />
         <Route
           path="/create-your-plan"
-          element={<Plan />}
+          element={<PlanTest />}
         />
         {/* <Redirect to="/" /> */}
 
