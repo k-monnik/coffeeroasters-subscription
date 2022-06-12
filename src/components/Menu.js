@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 
-export default function PlanTest() {
+export default function Menu() {
     const data = [
         {
             title: 'How do you drink your coffee?',
@@ -76,15 +76,18 @@ export default function PlanTest() {
                 {
                     "name": "Whole bean",
                     "description": "Best choice if you cherish the full sensory experience",
+                    id: 110,
                 },
 
                 {
                     "name": "Filter",
                     "description": "For drip or pour-over coffee methods such as V60 or Aeropress",
+                    id: 111,
                 },
                 {
                     "name": "Cafetiére",
                     "description": "Course ground beans specially suited for french press coffee",
+                    id: 112,
                 }
             ]
         },
@@ -95,15 +98,18 @@ export default function PlanTest() {
                 {
                     "name": "Every week",
                     "description": "$14.00 per shipment. Includes free first-class shipping",
+                    id: 113,
                 },
 
                 {
                     "name": "Every 2 weeks",
                     "description": "$17.25 per shipment. Includes free priority shipping",
+                    id: 114,
                 },
                 {
                     "name": "Every month",
                     "description": "$22.50 per shipment. Includes free priority shipping",
+                    id: 115,
                 }
             ]
         }
@@ -115,11 +121,12 @@ export default function PlanTest() {
         return (
 
             <div className="" key={id}>
+                {question.title}
                 <button
                     className=""
                     onClick={() => setToggleItem((prev) => !prev)}
                 >
-                    {question.title}
+                    Hide
                 </button>
 
                 {toggleItem &&

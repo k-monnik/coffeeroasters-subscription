@@ -1,8 +1,9 @@
-import { useState } from "react";
+// import { useState } from "react";
+import Menu from './Menu';
 import planHero from '../starter-code/assets/plan/desktop/image-hero-blackcup.jpg';
 
 const Plan = () => {
-    const [show, setShow] = useState(false);
+    // const [show, setShow] = useState(false);
 
     return (
         <div className='font-Fraunces'>
@@ -17,6 +18,7 @@ const Plan = () => {
                     </div>
 
                 </div>
+
 
                 {/* Hero END */}
 
@@ -76,10 +78,13 @@ const Plan = () => {
                             <div>Deliveries</div>
                         </div>
                     </div>
-
                     <div>
-                        <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-2 font-Barlow'>
-                            <div className='px-2'>
+                        <Menu />
+                    </div>
+
+                    {/* <div> */}
+                    {/* <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-2 font-Barlow'> */}
+                    {/* <div className='px-2'>
                                 <div className='flex justify-between mx-14'>
                                     <h1 className='text-grey text-4xl font-Fraunces font-bold'>How do you drink your coffee?</h1>
                                     <button onClick={() => setShow(!show)}>Hide</button>
@@ -103,8 +108,8 @@ const Plan = () => {
                                         </div>
                                         : null
                                 }
-                            </div>
-                            <div>
+                            </div> */}
+                    {/* <div>
                                 <div className='flex justify-between mx-14'>
                                     <h1 className='text-grey text-4xl font-Fraunces font-bold'>What type of coffee?</h1>
                                     <button onClick={() => setShow(!show)}>Hide</button>
@@ -128,8 +133,8 @@ const Plan = () => {
                                         </div>
                                         : null
                                 }
-                            </div>
-                            <div>
+                            </div> */}
+                    {/* <div>
                                 <div className='flex justify-between mx-14'>
                                     <h1 className='text-grey text-4xl font-Fraunces font-bold'>How much would you like?</h1>
                                     <button onClick={() => setShow(!show)}>Hide</button>
@@ -153,8 +158,8 @@ const Plan = () => {
                                         </div>
                                         : null
                                 }
-                            </div>
-                            <div>
+                            </div> */}
+                    {/* <div>
                                 <div className='flex justify-between mx-14'>
                                     <h1 className='text-grey text-4xl font-Fraunces font-bold'>Want us to grind them?</h1>
                                     <button onClick={() => setShow(!show)}>Hide</button>
@@ -178,8 +183,8 @@ const Plan = () => {
                                         </div>
                                         : null
                                 }
-                            </div>
-                            <div>
+                            </div> */}
+                    {/* <div>
                                 <div className='flex justify-between mx-14'>
                                     <h1 className='text-grey text-4xl font-Fraunces font-bold'>How often should we deliver?</h1>
                                     <button onClick={() => setShow(!show)}>Hide</button>
@@ -203,27 +208,19 @@ const Plan = () => {
                                         </div>
                                         : null
                                 }
-                            </div>
+                            </div> */}
 
-                        </div>
+                    {/* </div> */}
 
-                        {/* Order END */}
+                    {/* Order END */}
 
-                        {/* Summary START */}
-                        {/* use template literals here? */}
-                        <div>
-                            <div>Order Summary</div>
-                            <div>
-                                `I drink coffee ${ }, with a ${ } type of bean, ${ } ground ala ${ },
-                                sent to me ${ }.`
-                            </div>
-                        </div>
 
-                        {/* Summary END */}
-                        <button>Create my plan!</button>
-                    </div>
+                    {/* </div> */}
 
                 </div>
+
+
+                <button>Create my plan!</button>
 
 
             </div>
