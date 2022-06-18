@@ -1,10 +1,10 @@
-// import { useState } from "react";
+import { useState } from "react";
 import Menu from './Menu';
 import planHero from '../starter-code/assets/plan/desktop/image-hero-blackcup.jpg';
 import Modal from './Modal';
 
 const Plan = () => {
-    // const [show, setShow] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     return (
         <div className='font-Fraunces'>
@@ -221,10 +221,10 @@ const Plan = () => {
                 </div>
 
 
-                <button>Create my plan!</button>
+                <button onClick={() => setShowModal(true)} className='my-14 bg-dark-cyan px-8 py-3 rounded-md text-lg font-Fraunces font-bold text-white'>Create my plan!</button>
 
             </div>
-            <Modal />
+            <Modal visible={showModal} />
         </div>
     )
 }

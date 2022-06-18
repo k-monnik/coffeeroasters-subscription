@@ -3,7 +3,7 @@ import React from 'react'
 export default function Modal({ visible }) {
     if (!visible) return null;
     return (
-        <div className='fixed inset-0 bg-dark-grey-blue bg-opacity-30 backdrop-blur-sm flex justify-center items-center'>
+        <div className='fixed inset-0 bg-dark-grey-blue bg-opacity-70 flex justify-center items-center'>
             <div>
                 {/* <!-- Modal --> */}
                 Order Summary
