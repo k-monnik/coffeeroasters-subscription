@@ -133,7 +133,7 @@ export default function Menu() {
                     <ul>
                         {question.choices.map((item, id) => (
 
-                            <div key={id}>
+                            <div key={id} onClick={handleClick}>
                                 <li>{item.name}</li>
                                 <li>{item.description}</li>
                             </div>
@@ -144,6 +144,8 @@ export default function Menu() {
             </div>
         );
     };
+
+    const handleClick = value => console.log(`${data.choices.name}`);
 
 
     return (

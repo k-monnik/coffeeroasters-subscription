@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import Menu from './Menu';
 import planHero from '../starter-code/assets/plan/desktop/image-hero-blackcup.jpg';
+import Modal from './Modal';
 
 const Plan = () => {
     // const [show, setShow] = useState(false);
@@ -222,8 +223,8 @@ const Plan = () => {
 
                 <button>Create my plan!</button>
 
-
             </div>
+            <Modal />
         </div>
     )
 }
