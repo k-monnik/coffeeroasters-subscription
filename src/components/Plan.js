@@ -5,6 +5,7 @@ import Modal from './Modal';
 
 const Plan = () => {
     const [showModal, setShowModal] = useState(false);
+    const handleClose = () => setShowModal(false);
 
     return (
         <div className='font-Fraunces'>
@@ -224,7 +225,7 @@ const Plan = () => {
                 <button onClick={() => setShowModal(true)} className='my-14 bg-dark-cyan px-8 py-3 rounded-md text-lg font-Fraunces font-bold text-white'>Create my plan!</button>
 
             </div>
-            <Modal visible={showModal} />
+            <Modal visible={showModal} onClose={handleClose} />
         </div>
     )
 }

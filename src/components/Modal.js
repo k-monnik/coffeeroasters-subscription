@@ -1,9 +1,16 @@
 import React from 'react'
 
-export default function Modal({ visible }) {
+export default function Modal({ visible, onClose }) {
+    const handleClose = () => {
+        onClose();
+    }
+
+
     if (!visible) return null;
     return (
-        <div className='fixed inset-0 bg-dark-grey-blue bg-opacity-70 flex justify-center items-center'>
+        <div
+            onClick={handleClose}
+            className='fixed inset-0 bg-dark-grey-blue bg-opacity-70 flex justify-center items-center'>
             <div>
                 {/* <!-- Modal --> */}
                 Order Summary
@@ -17,6 +24,8 @@ export default function Modal({ visible }) {
                 $_____/month
 
                 Checkout
+
+                <button onClick={handleClose}>GO BACK</button>
                 {/* <!-- End modal --> */}
             </div>
 
